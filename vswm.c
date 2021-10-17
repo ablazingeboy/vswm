@@ -38,14 +38,14 @@ static Window root;
 static int screen, width, height;
 
 static Key keys[] = {
-	{ Mod4Mask, XK_Return, launch, "alacritty" },
-	{ Mod4Mask, XK_d, launch, "rofi -show drun" },
-	{ Mod4Mask, XK_w, launch, "firefox" },
-	{ Mod4Mask, XK_p, launch, "scrot" },
-	{ Mod4Mask | ShiftMask, XK_q, destroy, 0 },
-	{ Mod4Mask | ShiftMask, XK_r, refresh, 0 },
-	{ Mod4Mask, XK_Tab, focus, "next" },
-	{ Mod4Mask | ShiftMask, XK_Tab, focus, "prev" },
+	{ Mod1Mask, XK_Return, launch, "alacritty" },
+	{ Mod1Mask, XK_d, launch, "rofi -show drun" },
+	{ Mod1Mask, XK_w, launch, "firefox" },
+	{ Mod1Mask, XK_p, launch, "scrot" },
+	{ Mod1Mask | ShiftMask, XK_q, destroy, 0 },
+	{ Mod1Mask | ShiftMask, XK_r, refresh, 0 },
+	{ Mod1Mask, XK_Tab, focus, "next" },
+	{ Mod1Mask | ShiftMask, XK_Tab, focus, "prev" },
 	{ 0, XF86XK_AudioMute, launch, "pamixer -t" },
 	{ 0, XF86XK_AudioLowerVolume, launch, "pamixer -d 5" },
 	{ 0, XF86XK_AudioRaiseVolume, launch, "pamixer -i 5" },
